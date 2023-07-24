@@ -1,5 +1,5 @@
-// work slider data
-export const workSlider = {
+// events slider data
+export const eventsSlider = {
   slides: [
     {
       images: [
@@ -60,7 +60,7 @@ import { BsArrowRight } from 'react-icons/bs';
 // next image
 import Image from 'next/image';
 
-const WorkSlider = () => {
+const EventsSlider = () => {
   return (
     <Swiper
       spaceBetween={10}
@@ -70,7 +70,7 @@ const WorkSlider = () => {
       modules={[Pagination]}
       className='h-[280px] sm:h-[480px]'
     >
-      {workSlider.slides.map((slide, index) => {
+      {eventsSlider.slides.map((slide, index) => {
         return (
           <SwiperSlide key={index}>
             <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
@@ -112,4 +112,4 @@ const WorkSlider = () => {
   );
 };
 
-export default WorkSlider;
+export default EventsSlider;
