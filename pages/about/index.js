@@ -32,7 +32,7 @@ export const aboutData = [
         'We believe that diversity fosters innovation and creativity, and we actively promote an inclusive environment where everyone feels welcome and respected.'+
         'Our commitment to diversity means that our programs and initiatives are designed to cater to the needs and aspirations of individuals from all walks of life.'
           
-      },
+      }
         
         
 
