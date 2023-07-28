@@ -50,7 +50,7 @@ export const aboutData = [
          icons: [
            <FaHtml5 />,
          ]
-        },
+        }
       // {
       //   title: 'Adobe Design Achievement Awards - Finalist',
       //   stage: '2009 - 2010',
@@ -63,7 +63,7 @@ export const aboutData = [
       {
         title: 'We bring corporations together to amplify, accelerate and drive change.',
          icons: [
-           <FaHtml5 />,
+           <FaHtml5 />
          ]
         } 
     ],
