@@ -41,32 +41,6 @@ export const aboutData = [
       //   icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
       // },
     ],
-  },
-  {
-    title: 'Impact',
-    info: [
-      {
-        title: 'Everything we do is purposeful having a positive impact to the lives of people, their community and society.',
-         icons: [
-           <FaHtml5 />
-         ]
-        }
-      // {
-      //   title: 'Adobe Design Achievement Awards - Finalist',
-      //   stage: '2009 - 2010',
-      // },
-    ],
-  },
-  {
-    title: 'Collaborate',
-    info: [
-      {
-        title: 'We bring corporations together to amplify, accelerate and drive change.',
-         icons: [
-           <FaHtml5 />
-         ]
-        } 
-    ],
   }
   
 ];
@@ -218,7 +192,7 @@ const About = () => {
                   <div className='flex gap-x-4'>
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div className='text-2xl text-white'>{icon}</div>;
+                      return <div key={icon.id} className='text-2xl text-white'>{icon}</div>;
                     })}
                   </div>
                 </div>
