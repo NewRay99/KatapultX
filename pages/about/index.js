@@ -48,7 +48,7 @@ export const aboutData = [
       {
         title: 'Everything we do is purposeful having a positive impact to the lives of people, their community and society.',
          icons: [
-           <FaHtml5 />,
+           <FaHtml5 />
          ]
         }
       // {
