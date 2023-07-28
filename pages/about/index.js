@@ -20,73 +20,55 @@ import {
 //  about data
 export const aboutData = [
   {
-    title: 'skills',
+    title: 'Vision',
     info: [
-      {
-        title: 'Web Development',
-        icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
-        ],
+      {title: 'Inclusive',
+        stage: 'Inclusion is a guiding principle of Katapult-X, and we strive to create a safe and supportive space for everyone who seeks our services. '+
+        'We ensure that our programs are accessible and tailored to meet the diverse needs of our beneficiaries, regardless of their circumstances or challenges.'
+              
       },
-      {
-        title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        {title: 'Diversity',
+        stage: 'At Katapult-X, diversity is at the heart of everything we do. We celebrate and value the unique backgrounds, cultures, and perspectives that each individual brings.'+
+        'We believe that diversity fosters innovation and creativity, and we actively promote an inclusive environment where everyone feels welcome and respected.'+
+        'Our commitment to diversity means that our programs and initiatives are designed to cater to the needs and aspirations of individuals from all walks of life.'
+          
       },
+        
+        
+
+      // {
+      //   title: 'UI/UX Design',
+      //   icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+      // },
     ],
   },
   {
-    title: 'awards',
+    title: 'Impact',
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
-      },
-      {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
-      },
+        title: 'Everything we do is purposeful having a positive impact to the lives of people, their community and society.',
+         icons: [
+           <FaHtml5 />,
+         ]
+        },
+      // {
+      //   title: 'Adobe Design Achievement Awards - Finalist',
+      //   stage: '2009 - 2010',
+      // },
     ],
   },
   {
-    title: 'experience',
+    title: 'Collaborate',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
-      },
-      {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
-      },
-      {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
-      },
+        title: 'We bring corporations together to amplify, accelerate and drive change.',
+         icons: [
+           <FaHtml5 />,
+         ]
+        } 
     ],
-  },
-  {
-    title: 'credentials',
-    info: [
-      {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
-      },
-      {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
-      },
-    ],
-  },
+  }
+  
 ];
 
 // components
@@ -104,7 +86,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-    <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
+    <div className='flex bg-primary/80 py-32 text-center xl:text-left z-1'>
       <Circles />
       {/* avatar img */}
       <motion.div
@@ -112,7 +94,7 @@ const About = () => {
         initial='hidden'
         animate='show'
         exit='hidden'
-        className='hidden xl:flex absolute bottom-0 -left-[370px]'
+        className='hidden xl:flex absolute -bottom-[200px] -left-[370px]'
       >
         <Avatar />
       </motion.div>
@@ -126,8 +108,8 @@ const About = () => {
             exit='hidden'
             className='h2'
           >
-            Captivating <span className='text-accent'>stories</span> birth
-            magnificent designs.
+            <span className='text-accent'>Empowering</span> Talent:
+            A Path to Excellence.
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
@@ -136,10 +118,18 @@ const About = () => {
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
           >
-            10 years ago, I began freelancing as a developer. Since then, I've
-            done remote events for agencies, counsulted for startups, and
-            collaborated on digital products for business and consumer use.
+            Accelerate career opportunities for individuals from underprivileged backgrounds, empowering dreams and transforming lives.
+
           </motion.p>
+          <motion.h2
+            variants={fadeIn('right', 0.2)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className='h2'
+          >
+            <span className='text-accent'>Our Goals</span>
+          </motion.h2>
           {/* counters */}
           <motion.div
             variants={fadeIn('right', 0.6)}
@@ -148,41 +138,43 @@ const About = () => {
             exit='hidden'
             className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'
           >
-            <div className='flex flex-1 xl:gap-x-6'>
+           
+
+            <div className='flex flex-1 xl:gap-x-6 z-10'>
               {/* experience */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={10} duration={5} /> +
+                  <CountUp start={0} end={10} duration={5} /> 
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Years of experience
+                  College Prospects into University
                 </div>
               </div>
               {/* clients */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={250} duration={5} /> +
+                  <CountUp start={0} end={1000} duration={3} /> 
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Satisfied clients
+                  Laptops to Schools
                 </div>
               </div>
               {/* projects */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={650} duration={5} /> +
+                  <CountUp start={0} end={50} duration={5} /> 
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Finished projects
+                  Mentor Graduate
                 </div>
               </div>
               {/* awards */}
               <div className='relative flex-1'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={8} duration={5} /> +
+                  £<CountUp start={0} end={100} duration={3} />K
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Winning awards
+                  School Loans/Fees
                 </div>
               </div>
             </div>

@@ -31,8 +31,7 @@ const Services = () => {
               exit='hidden'
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. A
-              eveniet dignissimos distinctio tempore harum laudantium.
+              At Katapult X, we have three core programmes and have partnered with global corporations to work collectively to provide everyone with the opportunities they truly deserve in life. 
             </motion.p>
           </div>
 

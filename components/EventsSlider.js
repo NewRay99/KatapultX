@@ -4,11 +4,11 @@ export const eventsSlider = {
     {
       images: [
         {
-          title: 'title',
+          title: 'Acing Case Studies',
           path: '/thumb1.jpg',
         },
         {
-          title: 'title',
+          title: 'Interviewing Strategies',
           path: '/thumb2.jpg',
         },
         {
@@ -28,11 +28,11 @@ export const eventsSlider = {
           path: '/thumb4.jpg',
         },
         {
-          title: 'title',
+          title: 'Acing Case Studies',
           path: '/thumb1.jpg',
         },
         {
-          title: 'title',
+          title: 'Interviewing Strategies',
           path: '/thumb2.jpg',
         },
         {
@@ -73,7 +73,7 @@ const EventsSlider = () => {
       {eventsSlider.slides.map((slide, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
+            <div className='grid grid-cols-2 grid-rows-4 gap-4 cursor-pointer'>
               {slide.images.map((image, index) => {
                 return (
                   <div

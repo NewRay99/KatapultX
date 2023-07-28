@@ -22,30 +22,20 @@ import { FreeMode, Pagination } from 'swiper';
 // service data
 export const serviceData = [
   {
-    icon: <RxCrop />,
-    title: 'Coaching',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <RxReader />,
+    title: 'GRASSROOTS PROJECTS',
+    description: 'We engage with universities, colleges and schools to equip individuals the with skills, knowledge, and confidence needed to thrive in their personal and professional lives. ',
   },
   {
     icon: <RxPencil2 />,
-    title: 'Education',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxDesktop />,
-    title: 'Resources',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxReader />,
-    title: 'Access to Corporate Connections',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'CORPORATE ENGAGEMENTS',
+    description: 'At Katapult X, we believe in harnessing the power of collaboration to drive enduring and impactful change. Through strategic partnerships and collaborations with global companies, government bodies and research organisations, we aim to facilitate best practices and foster a culture of shared learning.',
   },
   {
     icon: <RxRocket />,
-    title: 'Mentoring',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
+    title: 'ENTREPRENEURSHIP',
+    description: 'Equip small business and entrepreneurs with the requisite skills to be able to engage business clients effectively.',
+  }
 ];
 
 const ServiceSlider = () => {
