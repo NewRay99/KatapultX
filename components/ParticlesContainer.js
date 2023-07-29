@@ -48,10 +48,10 @@ const ParticlesContainer = () => {
         },
         particles: {
           color: {
-            value: '#e68e2e',
+            value: '#ffffff',
           },
           links: {
-            color: '#f5d393',
+            color: '#F2B401',
             distance: 150,
             enable: true,
             opacity: 0.5,
@@ -84,7 +84,7 @@ const ParticlesContainer = () => {
             type: 'circle',
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: { min: 1, max: 8 },
           },
         },
         detectRetina: true,
