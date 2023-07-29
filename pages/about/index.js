@@ -19,13 +19,13 @@ export const aboutData = [
       {
         title: "Inclusive",
         stage:
-          "Inclusion is a guiding principle of Katapult-X, and we strive to create a safe and supportive space for everyone who seeks our services. " +
+          "Inclusion is a guiding principle of Katapult X, and we strive to create a safe and supportive space for everyone who seeks our services. " +
           "We ensure that our programs are accessible and tailored to meet the diverse needs of our beneficiaries, regardless of their circumstances or challenges.",
       },
       {
         title: "Diversity",
         stage:
-          "At Katapult-X, diversity is at the heart of everything we do. We celebrate and value the unique backgrounds, cultures, and perspectives that each individual brings." +
+          "At Katapult X, diversity is at the heart of everything we do. We celebrate and value the unique backgrounds, cultures, and perspectives that each individual brings." +
           "We believe that diversity fosters innovation and creativity, and we actively promote an inclusive environment where everyone feels welcome and respected." +
           "Our commitment to diversity means that our programs and initiatives are designed to cater to the needs and aspirations of individuals from all walks of life.",
       },
