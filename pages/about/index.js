@@ -185,17 +185,19 @@ const About = () => {
               );
             })}
           </div>
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start h-56 hover:overflow-scroll">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
                   key={itemIndex}
-                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
+                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60 "
                 >
                   {/* title */}
-                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                  <div className="font-light mb-2 md:mb-0 text-sm">
+                    {item.title}
+                  </div>
                   <div className="hidden md:flex">-</div>
-                  <div>{item.stage}</div>
+                  <div className="font-light text-sm ">{item.stage}</div>
                   <div key={itemIndex} className="flex gap-x-4">
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
