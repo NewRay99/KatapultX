@@ -44,14 +44,14 @@
        clip-path="none">
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;line-height:1.2;font-family:Alatsi;-inkscape-font-specification:Alatsi;letter-spacing:3.583px;word-spacing:0px;fill:#c3ed33;fill-opacity:1;stroke-width:0.3583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;line-height:1.2;font-family:Alatsi;-inkscape-font-specification:Alatsi;letter-spacing:3.583px;word-spacing:0px;fill:#1acc89;fill-opacity:1;stroke-width:0.3583"
          x="53.895046"
          y="242.49632"
          id="text14-1-0-8"
          transform="scale(0.98533914,1.014879)"><tspan
            sodipodi:role="line"
            id="tspan14-4-2-5"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;line-height:1.2;font-family:Alatsi;-inkscape-font-specification:Alatsi;letter-spacing:3.583px;word-spacing:0px;fill:#c3ed33;fill-opacity:1;stroke-width:0.3583"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;line-height:1.2;font-family:Alatsi;-inkscape-font-specification:Alatsi;letter-spacing:3.583px;word-spacing:0px;fill:#1acc89;fill-opacity:1;stroke-width:0.3583"
            x="53.895046"
            y="242.49632"
            dx="0 0 0"
@@ -68,13 +68,13 @@
            sodipodi:nodetypes="cccccc"
            inkscape:label="X-base" />
         <path
-           style="color:#000000;font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:#c3ed33;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+           style="color:#000000;font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:#1acc89;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
            d="m 97.019217,199.98117 -4.04093,4.91752 -15.91389,-11.75322 -1.4315,-0.0125 15.57227,14.24023 -12.20869,10.8267 34.066333,0.9317 -18.338033,-13.31638 m -2.13875,2.81968 8.912113,8.14844 -16.094863,-0.10601 z"
            id="path78"
            sodipodi:nodetypes="cccccccccccc"
            inkscape:label="X-accent" />
         <ellipse
-           style="fill:#c3ed33;fill-opacity:1;stroke:none;stroke-width:3.00684;stroke-dasharray:none;stroke-opacity:1"
+           style="fill:#1acc89;fill-opacity:1;stroke:none;stroke-width:3.00684;stroke-dasharray:none;stroke-opacity:1"
            id="path77"
            cx="87.409523"
            cy="192.43262"

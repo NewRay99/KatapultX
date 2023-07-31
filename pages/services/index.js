@@ -10,6 +10,9 @@ import { fadeIn } from "../../variants";
 const Services = () => {
   return (
     <div className="h-full bg-primary/30 py-36 flex items-center">
+      {/* bg img */}
+      {/* <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl: xl:bg-no-repeat w-full h-full absolute translate-z-0"></div> */}
+
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
