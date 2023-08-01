@@ -69,9 +69,9 @@ const ServiceSlider = () => {
               {/* icon */}
               <div className="text-4xl text-accent mb-4">{item.icon}</div>
               {/* title & desc */}
-              <div className="mb-8 overflow-y-auto ">
+              <div className="mb-8  ">
                 <div className="mb-2 text-lg">{item.title}</div>
-                <p className="max-w-[350px] leading-normal">
+                <p className="max-w-[350px] leading-normal h-80 overflow-y-auto scrollbar-none">
                   {item.description}
                 </p>
               </div>
