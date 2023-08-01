@@ -69,7 +69,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-    <div className="flex bg-primary/80 py-32 text-center xl:text-left z-1">
+    <div className="flex bg-primary/80 py-36 text-center xl:text-left ">
       <Circles />
       {/* avatar img */}
       <motion.div
@@ -81,7 +81,7 @@ const About = () => {
       >
         <Avatar />
       </motion.div>
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mx-auto h-full flex flex-col items-center md:flex-row gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center z-10">
           <motion.h2
