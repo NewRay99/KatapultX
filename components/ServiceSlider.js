@@ -60,7 +60,7 @@ const ServiceSlider = () => {
         clickable: true,
       }}
       modules={[FreeMode, Pagination]}
-      className="h-[280px] sm:h-[340px]"
+      className="h-[280px] sm:h-[460px]"
     >
       {serviceData.map((item, index) => {
         return (
@@ -69,7 +69,7 @@ const ServiceSlider = () => {
               {/* icon */}
               <div className="text-4xl text-accent mb-4">{item.icon}</div>
               {/* title & desc */}
-              <div className="mb-8">
+              <div className="mb-8 overflow-y-auto ">
                 <div className="mb-2 text-lg">{item.title}</div>
                 <p className="max-w-[350px] leading-normal">
                   {item.description}
