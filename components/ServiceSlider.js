@@ -1,10 +1,13 @@
 // import swiper react components
+import React, { useState } from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // import swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
+import ModalPopup from "../pages/modal";
 
 // icons
 import {
@@ -29,7 +32,7 @@ export const serviceData = [
   },
   {
     icon: <RxPencil2 />,
-    title: "Coproate Engagements",
+    title: "Corporate Engagements",
     description:
       "At Katapult X, we believe in harnessing the power of collaboration to drive enduring and impactful change. Through strategic partnerships and collaborations with global companies, government bodies and research organisations, we aim to facilitate best practices and foster a culture of shared learning.",
   },
@@ -42,6 +45,10 @@ export const serviceData = [
 ];
 
 const ServiceSlider = () => {
+  const [showPopUp, setShowPopUp] = useState(false);
+  const handleOnClose = () => setShowPopUp(false);
+  const [popupMessage, setPopupMessage] = useState("");
+
   return (
     <Swiper
       breakpoints={{
@@ -76,13 +83,26 @@ const ServiceSlider = () => {
                 </p>
               </div>
               {/* arrow */}
-              <div className="text-3xl">
+              <div
+                onClick={() => {
+                  setShowPopUp(true);
+                  const message = item.description;
+                  setPopupMessage(message);
+                }}
+                className="text-3xl"
+              >
                 <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300" />
               </div>
             </div>
           </SwiperSlide>
         );
       })}
+      <ModalPopup
+        onClose={handleOnClose}
+        visible={showPopUp}
+        getMessage={popupMessage}
+      />
+      ;
     </Swiper>
   );
 };
