@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 // icons
 import { FaHtml5 } from "react-icons/fa";
+import ModalPopup from "/pages/modal";
 
 import {
   SiNextdotjs,
@@ -18,13 +19,13 @@ export const aboutData = [
     info: [
       {
         title: "Inclusive",
-        stage:
+        description:
           "Inclusion is a guiding principle of Katapult X, and we strive to create a safe and supportive space for everyone who seeks our services. " +
           "We ensure that our programs are accessible and tailored to meet the diverse needs of our beneficiaries, regardless of their circumstances or challenges.",
       },
       {
         title: "Diversity",
-        stage:
+        description:
           "At Katapult X, diversity is at the heart of everything we do. We celebrate and value the unique backgrounds, cultures, and perspectives that each individual brings." +
           "We believe that diversity fosters innovation and creativity, and we actively promote an inclusive environment where everyone feels welcome and respected." +
           "Our commitment to diversity means that our programs and initiatives are designed to cater to the needs and aspirations of individuals from all walks of life.",
@@ -68,6 +69,12 @@ import CountUp from "react-countup";
 const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
+  const [showPopUp, setShowPopUp] = useState(false);
+  const handleOnClose = () => setShowPopUp(false);
+  const [popupMessage, setPopupMessage] = useState("");
+  const [popupTitle, setPopupTitle] = useState("");
+  console.log("About: " + showPopUp);
+
   return (
     <div className="flex bg-primary/80 py-36 text-center xl:text-left ">
       <Circles />
@@ -109,7 +116,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2"
+            className="hidden h2 md:flex  mx-auto"
           >
             <span className="text-accent">Our Goals</span>
           </motion.h2>
@@ -190,6 +197,13 @@ const About = () => {
               return (
                 <div
                   key={itemIndex}
+                  onClick={() => {
+                    setShowPopUp(true);
+                    const title = item.title;
+                    const message = item.description;
+                    setPopupMessage(message);
+                    setPopupTitle(title);
+                  }}
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60 "
                 >
                   {/* title */}
@@ -197,7 +211,7 @@ const About = () => {
                     {item.title}
                   </div>
                   <div className="hidden md:flex">-</div>
-                  <div className="font-light text-sm ">{item.stage}</div>
+                  <div className="font-light text-sm ">{item.description}</div>
                   <div key={itemIndex} className="flex gap-x-4">
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
@@ -214,6 +228,13 @@ const About = () => {
           </div>
         </motion.div>
       </div>
+      <ModalPopup
+        onClose={handleOnClose}
+        visible={showPopUp}
+        getMessage={popupMessage}
+        getTitle={popupTitle}
+      />
+      ;
     </div>
   );
 };

@@ -1,7 +1,6 @@
 // import swiper react components
 import React, { useState } from "react";
 
-import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // import swiper styles
@@ -19,36 +18,41 @@ import {
   RxRocket,
   RxArrowTopRight,
 } from "react-icons/rx";
-
+import { GiCardAceSpades } from "react-icons/gi";
 import { BiExpandAlt } from "react-icons/bi";
 
 // import required modules
 import { FreeMode, Pagination } from "swiper";
 
-// service data
-export const serviceData = [
+// grassRoots data
+export const grassRootsData = [
   {
     icon: <RxReader />,
-    title: "Grassroots Projects",
-    childPage: "grassroots",
+    title: "Free Laptops",
     description:
-      "We engage with universities, colleges and schools to equip individuals the with skills, knowledge, and confidence needed to thrive in their personal and professional lives. ",
+      "We will hand deliver resources to children who need it most, starting with Primary Schools all the way up to College Students ",
   },
   {
-    icon: <RxPencil2 />,
-    title: "Corporate Engagements",
+    icon: <GiCardAceSpades />,
+    title: "Acing Case Studies",
     description:
       "At Katapult X, we believe in harnessing the power of collaboration to drive enduring and impactful change. Through strategic partnerships and collaborations with global companies, government bodies and research organisations, we aim to facilitate best practices and foster a culture of shared learning.",
   },
   {
     icon: <RxRocket />,
-    title: "Entrepreneurship",
+    title: "Interviewing Strategies",
+    description:
+      "Equip small business and entrepreneurs with the requisite skills to be able to engage business clients effectively.",
+  },
+  {
+    icon: <RxRocket />,
+    title: "Business Mentor",
     description:
       "Equip small business and entrepreneurs with the requisite skills to be able to engage business clients effectively.",
   },
 ];
 
-const ServiceSlider = () => {
+const GrassRootsSlider = () => {
   const [showPopUp, setShowPopUp] = useState(false);
   const handleOnClose = () => setShowPopUp(false);
   const [popupMessage, setPopupMessage] = useState("");
@@ -73,18 +77,17 @@ const ServiceSlider = () => {
       modules={[FreeMode, Pagination]}
       className="h-[280px] sm:h-[460px]"
     >
-      {serviceData.map((item, index) => {
+      {grassRootsData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
             <div className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300">
               {/* icon */}
               <div className="text-4xl text-accent mb-4">{item.icon}</div>
               {/* title & desc */}
-
               <div className="mb-8  ">
                 <div className="mb-2 text-lg">{item.title}</div>
                 <p className="max-w-[350px] leading-normal h-80 overflow-y-auto scrollbar-none">
-                  <a href={item.childPage}> {item.description}</a>
+                  {item.description}
                 </p>
               </div>
               {/* arrow */}
@@ -94,16 +97,10 @@ const ServiceSlider = () => {
                   const message = item.description;
                   setPopupMessage(message);
                 }}
-                className="text-3xl  "
+                className="text-3xl"
               >
                 <BiExpandAlt className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300" />
               </div>
-              <a
-                href={item.childPage}
-                className="text-3xl transition-all duration-300 "
-              >
-                <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300" />
-              </a>
             </div>
           </SwiperSlide>
         );
@@ -118,4 +115,4 @@ const ServiceSlider = () => {
   );
 };
 
-export default ServiceSlider;
+export default GrassRootsSlider;

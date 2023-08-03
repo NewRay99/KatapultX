@@ -1,13 +1,13 @@
 // components
-import ServiceSlider from "../../components/ServiceSlider";
+import GrassRootsSlider from "../../components/GrassRootsSlider";
 import Bulb from "../../components/Bulb";
 import Circles from "../../components/Circles";
-
+import { router } from "next/router";
 // framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
-const Services = () => {
+const GrassRoots = () => {
   return (
     <div className="flex bg-primary/30 py-36 items-center z-1">
       {/* bg img */}
@@ -25,7 +25,7 @@ const Services = () => {
               exit="hidden"
               className="h2 xl:mt-8"
             >
-              Our services<span className="text-accent">.</span>
+              Grass Roots<span className="text-accent">.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -34,9 +34,8 @@ const Services = () => {
               exit="hidden"
               className="md:flex md:max-w-[400px] mx-auto lg:mx-0 mb-4"
             >
-              At Katapult X, we have three core programmes and have partnered
-              with global corporations to work collectively to provide everyone
-              with the opportunities they truly deserve in life. 
+              We wil provide help right down to the people who need them most.
+              We've identified how we will do this through project initiatives
             </motion.p>
           </div>
 
@@ -48,7 +47,7 @@ const Services = () => {
             exit="hidden"
             className="w-full xl:max-w-[75%]"
           >
-            <ServiceSlider />
+            <GrassRootsSlider />
           </motion.div>
         </div>
       </div>
@@ -57,4 +56,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default GrassRoots;
