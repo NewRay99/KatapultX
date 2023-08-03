@@ -35,7 +35,8 @@ const GrassRoots = () => {
               className="md:flex md:max-w-[400px] mx-auto lg:mx-0 mb-4"
             >
               We wil provide help right down to the people who need them most.
-              We've identified how we will do this through project initiatives
+              We&apos;ve identified how we will do this through project
+              initiatives
             </motion.p>
           </div>
 
